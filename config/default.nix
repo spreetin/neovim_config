@@ -11,10 +11,19 @@
 
   withRuby = false;
   extraPackages = with pkgs; [
+    curl
     fzf
+    git
     lazygit
     ripgrep
+    nodePackages.nodejs
+    perl
+    python315
+    ruby
   ];
   colorschemes.catppuccin.enable = true;
   colorscheme = "catppuccin";
+  performance = {
+    byteCompileLua.enable = true;
+  };
 }

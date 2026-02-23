@@ -1,4 +1,8 @@
+{ pkgs, ... }:
 {
+  extraPackages = with pkgs; [
+    fd
+  ];
   plugins = {
     telescope = {
       enable = true;

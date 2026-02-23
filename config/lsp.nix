@@ -1,6 +1,6 @@
 {
   lsp.servers = {
-    asm.enable = true;
+    asm_lsp.enable = true;
     bashls.enable = true;
     clangd.enable = true;
     cmake.enable = true;

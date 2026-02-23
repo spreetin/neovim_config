@@ -5,6 +5,8 @@
     black
     cmake-format
     gofumpt
+    #haskellPackages.hindent
+    prettier
     rustfmt
     stylua
     vimPlugins.vim-clang-format
@@ -18,19 +20,19 @@
         c = [ "clang_format" ];
         cmake = [ "cmake_format" ];
         cpp = [ "clang_format" ];
-        css = [ "prettierd" ];
+        css = [ "prettier" ];
         go = [ "gofumpt" ];
         haskell = [ "hlindent" ];
-        html = [ "prettierd" ];
-        javascript = [ "prettierd" ];
-        json = [ "prettierd" ];
+        html = [ "prettier" ];
+        javascript = [ "prettier" ];
+        json = [ "prettier" ];
         lua = [ "stylua" ];
-        markdown = [ "prettierd" ];
+        markdown = [ "prettier" ];
         nix = [ "nixfmt" ];
         python = [ "black" ];
         qml = [ "qmlformat" ];
         rust = [ "rustfmt" ];
-        yaml = [ "prettierd" ];
+        yaml = [ "prettier" ];
       };
       format_on_save = ''
         {

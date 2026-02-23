@@ -1,4 +1,10 @@
+{ pkgs, ... }:
 {
+  extraPackages = with pkgs; [
+    ghostscript
+    mermaid-cli
+    texliveBasic
+  ];
   keymaps = [
     # Pickers
     {

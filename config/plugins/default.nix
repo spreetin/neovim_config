@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   imports = [
     ./blink-cmp.nix
@@ -9,6 +10,9 @@
     ./telescope.nix
     ./treesitter.nix
     ./which-key.nix
+  ];
+  extraPackages = with pkgs; [
+    ast-grep
   ];
   plugins = {
     lspconfig.enable = true;
@@ -25,6 +29,8 @@
     #    { name = "treesitter"; }
     #  ];
     #};
+    codecompanion.enable = true;
+    comment.enable = true;
     dashboard.enable = true;
     dial.enable = true;
     flash.enable = true;
@@ -51,6 +57,7 @@
     nvim-surround.enable = true;
     persistence.enable = true;
     spectre.enable = true;
+    toggleterm.enable = true;
     trouble.enable = true;
     typescript-tools.enable = true;
     undotree.enable = true;

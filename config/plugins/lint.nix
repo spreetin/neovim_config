@@ -9,6 +9,7 @@
     markdownlint-cli
     nodePackages.jshint
     pylint
+    svelte-check
     yamllint
     kdePackages.qtdeclarative
   ];
@@ -28,6 +29,7 @@
       markdown = [ "markdownlint" ];
       nix = [ "nix" ];
       python = [ "pylint" ];
+      svelte = [ "svelte-check" ];
       qml = [ "qmllint" ];
       yaml = [ "yamllint" ];
     };

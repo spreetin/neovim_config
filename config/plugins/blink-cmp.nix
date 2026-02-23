@@ -27,7 +27,7 @@
           default = [
             "lsp"
             "path"
-            #"snippets"
+            "snippets"
             "buffer"
             "ripgrep"
           ];
