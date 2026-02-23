@@ -1,4 +1,15 @@
 {
+  imports = [
+    ./blink-cmp.nix
+    ./conform.nix
+    ./dap.nix
+    ./lint.nix
+    ./mini.nix
+    ./snacks.nix
+    ./telescope.nix
+    ./treesitter.nix
+    ./which-key.nix
+  ];
   plugins = {
     lspconfig.enable = true;
     clangd-extensions.enable = true;

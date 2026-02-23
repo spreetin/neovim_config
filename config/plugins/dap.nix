@@ -82,7 +82,7 @@
       options = {
         silent = true;
         desc = "Run Debugger";
-        icon = " ";
+        # icon = " ";
       };
     }
     {
@@ -92,7 +92,7 @@
       options = {
         silent = true;
         desc = "Run Last Debug";
-        icon = " ";
+        # icon = " ";
       };
     }
     {
@@ -102,7 +102,7 @@
       options = {
         silent = true;
         desc = "Toggle Breakpoint";
-        icon = " ";
+        # icon = " ";
       };
     }
   ];
