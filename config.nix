@@ -130,7 +130,27 @@
           nvim-lint = {
             enable = true;
           };
-          };
+        };
+        extraPackages = with pkgs; [
+          gcc
+          clang
+          curl
+          git
+          haskell-language-server
+          haskellPackages.hoogle
+          haskellPackages.fast-tags
+          haskellPackages.haskell-debug-adapter
+          haskellPackages.ghci-dap
+          nodePackages.nodejs
+          #tree-sitter
+          ghostscript
+          texliveBasic
+          mermaid-cli
+          rust-analyzer
+          lldb
+          sqlite
+          yazi
+        ];
         extraPlugins = { };
         filetree = {
           neo-tree.enable = true;
@@ -249,11 +269,12 @@
           };
           bufremove.enable = true;
           comment.enable = true;
+          icons.enable = true;
           indentscope.enable = true;
           pairs.enable = true;
           surround = {
             enable = true;
-            setupOpts.n_lines = "100";
+            setupOpts.n_lines = 100;
           };
         };
         minimap = {
