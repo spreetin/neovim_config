@@ -139,7 +139,7 @@
     {
       mode = "n";
       key = "<F4>";
-      action = "<cmd>ClangdSwitchSourceHeader";
+      action = "<cmd>ClangdSwitchSourceHeader<CR>";
       options.desc = "Switch Header/Source";
     }
   ];
