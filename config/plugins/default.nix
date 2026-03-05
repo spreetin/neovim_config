@@ -41,7 +41,7 @@
     inc-rename.enable = true;
     indent-blankline.enable = true;
     lazygit.enable = true;
-    #lualine.enable = true;
+    lualine.enable = true;
     lz-n = {
       enable = true;
       autoLoad = true;
