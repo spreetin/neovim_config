@@ -37,6 +37,12 @@
             mode = "n";
           }
           {
+            __unkeyed-1 = "<leader>p";
+            group = "Preview";
+            icon = " ";
+            mode = "n";
+          }
+          {
             __unkeyed-1 = "<leader>u";
             group = "Clear";
             icon = " ";

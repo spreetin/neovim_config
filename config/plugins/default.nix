@@ -46,6 +46,7 @@
       enable = true;
       autoLoad = true;
     };
+    markdown-preview.enable = true;
     neo-tree.enable = true;
     nix-develop.enable = true;
     nix.enable = true;
@@ -63,4 +64,15 @@
     undotree.enable = true;
     web-devicons.enable = true;
   };
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>pm";
+      action = ":MarkdownPreviewToggle<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
+  ];
 }
