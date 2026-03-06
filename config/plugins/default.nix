@@ -56,6 +56,7 @@
     nvim-autopairs.enable = true;
     #nvim-snippets.enable = true;
     nvim-surround.enable = true;
+    nvim-tree.enable = true;
     persistence.enable = true;
     spectre.enable = true;
     toggleterm.enable = true;
@@ -69,6 +70,15 @@
       mode = "n";
       key = "<leader>pm";
       action = ":MarkdownPreviewToggle<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>t";
+      action = ":NvimTreeOpen<CR>";
       options = {
         silent = true;
         noremap = true;
