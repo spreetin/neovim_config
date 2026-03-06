@@ -60,7 +60,6 @@
     nvim-surround.enable = true;
     persistence.enable = true;
     spectre.enable = true;
-    trouble.enable = true;
     typescript-tools.enable = true;
     undotree.enable = true;
     web-devicons.enable = true;

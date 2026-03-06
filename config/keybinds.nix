@@ -92,16 +92,6 @@
     }
     {
       mode = "n";
-      key = "<leader>t";
-      action = ":ToggleTerm<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "toggle terminal";
-      };
-    }
-    {
-      mode = "n";
       key = "<F4>";
       action = "<cmd>ClangdSwitchSourceHeader<CR>";
       options.desc = "Switch Header/Source";
