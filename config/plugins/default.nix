@@ -5,10 +5,14 @@
     ./conform.nix
     ./dap.nix
     ./lint.nix
+    ./markdown-preview.nix
     ./mini.nix
+    ./neotree.nix
     ./snacks.nix
     ./telescope.nix
+    ./toggleterm.nix
     ./treesitter.nix
+    ./trouble.nix
     ./which-key.nix
   ];
   extraPackages = with pkgs; [
@@ -46,8 +50,6 @@
       enable = true;
       autoLoad = true;
     };
-    markdown-preview.enable = true;
-    neo-tree.enable = true;
     nix-develop.enable = true;
     nix.enable = true;
     noice.enable = true;
@@ -56,33 +58,11 @@
     nvim-autopairs.enable = true;
     #nvim-snippets.enable = true;
     nvim-surround.enable = true;
-    nvim-tree.enable = true;
     persistence.enable = true;
     spectre.enable = true;
-    toggleterm.enable = true;
     trouble.enable = true;
     typescript-tools.enable = true;
     undotree.enable = true;
     web-devicons.enable = true;
   };
-  keymaps = [
-    {
-      mode = "n";
-      key = "<leader>pm";
-      action = ":MarkdownPreviewToggle<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>t";
-      action = ":NvimTreeOpen<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-      };
-    }
-  ];
 }

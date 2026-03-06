@@ -43,9 +43,21 @@
             mode = "n";
           }
           {
+            __unkeyed-1 = "<leader>t";
+            group = "Tree / terminal";
+            icon = "󰙅 ";
+            mode = "n";
+          }
+          {
             __unkeyed-1 = "<leader>u";
             group = "Clear";
             icon = " ";
+            mode = "n";
+          }
+          {
+            __unkeyed-1 = "<leader>x";
+            group = "Trouble";
+            icon = " ";
             mode = "n";
           }
         ];

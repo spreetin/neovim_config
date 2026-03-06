@@ -102,42 +102,6 @@
     }
     {
       mode = "n";
-      key = "<leader><space>";
-      action.__raw = "function() Snacks.picker.smart() end";
-      options.desc = "Smart Find Files";
-    }
-    {
-      mode = "n";
-      key = "<leader>,";
-      action.__raw = "function() Snacks.picker.buffers() end";
-      options.desc = "Buffers";
-    }
-    {
-      mode = "n";
-      key = "<leader>n";
-      action.__raw = "function() Snacks.notifications() end";
-      options.desc = "Notification History";
-    }
-    {
-      mode = "n";
-      key = "<leader>e";
-      action.__raw = "function() Snacks.explorer() end";
-      options.desc = "File Explorer";
-    }
-    {
-      mode = "n";
-      key = "<leader>fb";
-      action.__raw = "function() Snacks.picker.buffers() end";
-      options.desc = "Buffers";
-    }
-    {
-      mode = "n";
-      key = "<leader>fc";
-      action.__raw = ''function() Snacks.picker.files({cwd = vim.fn.stdpath("config")}) end'';
-      options.desc = "Find Config File";
-    }
-    {
-      mode = "n";
       key = "<F4>";
       action = "<cmd>ClangdSwitchSourceHeader<CR>";
       options.desc = "Switch Header/Source";
