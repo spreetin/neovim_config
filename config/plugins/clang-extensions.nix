@@ -22,7 +22,7 @@
     {
       mode = "n";
       key = "<leader>gs";
-      action = "<cmd>ClangdSymbolInfo";
+      action = "<cmd>ClangdSymbolInfo<CR>";
       options.desc = "Show symbol info (clangd)";
     }
     {
