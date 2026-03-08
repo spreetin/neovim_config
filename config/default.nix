@@ -4,6 +4,7 @@
   imports = [
     ./plugins
 
+    ./autocmd.nix
     ./config.nix
     ./keybinds.nix
     ./lsp.nix
