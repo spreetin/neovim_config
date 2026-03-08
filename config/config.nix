@@ -35,6 +35,7 @@
     autowrite = false;
     backspace = "indent,eol,start";
     encoding = "UTF-8";
+    title = true;
   };
   clipboard = {
     register = "unnamedplus";
