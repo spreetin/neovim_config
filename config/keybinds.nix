@@ -90,11 +90,5 @@
         noremap = true;
       };
     }
-    {
-      mode = "n";
-      key = "<F4>";
-      action = "<cmd>ClangdSwitchSourceHeader<CR>";
-      options.desc = "Switch Header/Source";
-    }
   ];
 }

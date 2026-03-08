@@ -2,6 +2,7 @@
 {
   imports = [
     ./blink-cmp.nix
+    ./clang-extensions.nix
     ./conform.nix
     ./dap.nix
     ./lint.nix
@@ -20,7 +21,6 @@
   ];
   plugins = {
     lspconfig.enable = true;
-    clangd-extensions.enable = true;
     actions-preview.enable = true;
     bufferline.enable = true;
     cmake-tools.enable = true;
