@@ -7,7 +7,7 @@
     hlint
     html-tidy
     markdownlint-cli
-    nodePackages.jshint
+    jshint
     pylint
     svelte-check
     yamllint

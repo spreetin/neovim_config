@@ -17,7 +17,7 @@
     git
     lazygit
     ripgrep
-    nodePackages.nodejs
+    nodejs
     perl
     python315
     ruby
