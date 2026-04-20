@@ -9,6 +9,7 @@
     markdownlint-cli
     jshint
     pylint
+    statix
     svelte-check
     yamllint
     kdePackages.qtdeclarative
@@ -27,7 +28,7 @@
       #json = mkIf (elem "json" cfg.languages) [ "jsonlint" ];
       lua = [ "luacheck" ];
       markdown = [ "markdownlint" ];
-      nix = [ "nix" ];
+      nix = [ "statix" ];
       python = [ "pylint" ];
       svelte = [ "svelte-check" ];
       qml = [ "qmllint" ];
