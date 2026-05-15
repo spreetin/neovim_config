@@ -1,9 +1,11 @@
 {
-  flake.modules.neovim."lang_haskell" =
-    { pkgs, ... }:
-    {
-      lsp.servers.hls.enable = true;
-      extraPackages = with pkgs; [ hlint ];
-      plugins.lint.lintersByFt.haskell = [ "hlint" ];
+  flake.modules.neovim."lang_haskell" = {
+    plugins = {
+      lint.lintersByFt.haskell = [ "hlint" ];
+      haskell-tools = {
+        enable = true;
+        enableTelescope = true;
+      };
     };
+  };
 }

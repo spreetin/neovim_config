@@ -24,8 +24,10 @@
       # Languages
       lang_bash
       lang_c
+      lang_cpp
       lang_css
       lang_html
+      lang_javascript
       lang_json
       lang_markdown
       lang_nix

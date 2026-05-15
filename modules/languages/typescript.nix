@@ -1,20 +1,10 @@
 {
-  flake.modules.neovim."lang_typescript" =
-    { pkgs, ... }:
-    {
-      lsp.servers.ts_ls.enable = true;
-      extraPackages = with pkgs; [
-        prettier
-        jshint
-      ];
-      plugins = {
-        conform-nvim.settings.formatters_by_ft = {
-          javascript = [ "prettier" ];
-        };
-        lint.lintersByFt = {
-          javascript = [ "jshint" ];
-        };
-        typescript-tools.enable = true;
-      };
+  flake.modules.neovim."lang_typescript" = {
+    lsp.servers.ts_ls.enable = true;
+    plugins = {
+      conform-nvim.settings.formatters_by_ft.typescript = [ "prettier" ];
+      lint.lintersByFt.typescript = [ "jshint" ];
+      typescript-tools.enable = true;
     };
+  };
 }

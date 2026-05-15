@@ -3,7 +3,7 @@
   ...
 }:
 {
-  flake.modules.neovim."config_default" = {
+  flake.modules.neovim."config_full" = {
     imports = with config.flake.modules.neovim; [
       common
 
@@ -24,8 +24,12 @@
       which-key
 
       # Languages
+      lang_asm
+      lang_autotools
       lang_bash
       lang_c
+      lang_clojure
+      lang_cobol
       lang_cpp
       lang_css
       lang_go

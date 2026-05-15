@@ -1,5 +1,5 @@
 {
-  flake.modules.neovim."lang_c" = {
+  flake.modules.neovim."lang_cpp" = {
     lsp.servers = {
       clangd.enable = true;
       cmake.enable = true;
@@ -40,12 +40,15 @@
       clangd-extensions.enable = true;
       cmake-tools.enable = true;
       conform-nvim.settings.formatters_by_ft = {
-        c = [ "clang_format" ];
         cmake = [ "cmake_format" ];
+        cpp = [ "clang_format" ];
       };
       lint.lintersByFt = {
-        c = [ "cppcheck" ];
         cmake = [ "cmakelint" ];
+        cpp = [
+          "cppcheck"
+          "clazy"
+        ];
       };
     };
   };

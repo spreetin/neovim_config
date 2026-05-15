@@ -1,11 +1,9 @@
 {
-  flake.modules.neovim."lang_json" =
-    { pkgs, ... }:
-    {
-      lsp.servers.jsonls.enable = true;
-      extraPackages = with pkgs; [
-        prettier
-      ];
-      plugins.conform-nvim.settings.formatters_by_ft.json = [ "prettier" ];
+  flake.modules.neovim."lang_json" = {
+    lsp.servers.jsonls.enable = true;
+    plugins = {
+      conform-nvim.settings.formatters_by_ft.json = [ "prettier" ];
+      lint.lintersByFt.json = [ "json_tool" ];
     };
+  };
 }

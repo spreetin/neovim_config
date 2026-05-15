@@ -1,5 +1,9 @@
 {
   flake.modules.neovim."lang_sql" = {
-    lsp.servers.sqls.enable = true;
+    lsp.servers.sqlls.enable = true;
+    plugins = {
+      conform-nvim.settings.formatters_by_ft.sql = [ "sqlfluff" ];
+      lint.lintersByFt.sql = [ "sqlfluff" ];
+    };
   };
 }

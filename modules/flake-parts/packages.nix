@@ -13,6 +13,7 @@
     {
       packages = {
         default = nixvim'.makeNixvimWithModule (mkModule config.flake.modules.neovim."config_default");
+        full = nixvim'.makeNixvimWithModule (mkModule config.flake.modules.neovim."config_full");
         small = nixvim'.makeNixvimWithModule (mkModule config.flake.modules.neovim."config_small");
         minimal = nixvim'.makeNixvimWithModule (mkModule config.flake.modules.neovim."config_minimal");
       };
