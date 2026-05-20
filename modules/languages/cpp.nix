@@ -2,7 +2,7 @@
   flake.modules.neovim."lang_cpp" =
     { pkgs, ... }:
     {
-      extraPackages = with pkgs; [ cmakelint ];
+      extraPackages = with pkgs; [ cmake-lint ];
       lsp.servers = {
         clangd.enable = true;
         cmake.enable = true;
