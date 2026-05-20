@@ -9,6 +9,7 @@
 
       # Plugins
       blink-cmp
+      claude
       codebook
       conform
       dap

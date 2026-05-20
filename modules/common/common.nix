@@ -4,13 +4,15 @@
     {
 
       withRuby = false;
+      dependencies = {
+        curl.enable = true;
+        fzf.enable = true;
+        git.enable = true;
+        lazygit.enable = true;
+        ripgrep.enable = true;
+      };
       extraPackages = with pkgs; [
         ast-grep
-        curl
-        fzf
-        git
-        lazygit
-        ripgrep
       ];
       colorschemes.catppuccin.enable = true;
       colorscheme = "catppuccin";
