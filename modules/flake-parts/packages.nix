@@ -5,6 +5,7 @@
     let
       nixvim' = inputs.nixvim.legacyPackages.${system};
       mkModule = module: {
+        nixpkgs.config.allowUnfree = true;
         inherit system;
         module = module;
         extraSpecialArgs = { };
