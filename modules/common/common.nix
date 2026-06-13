@@ -30,7 +30,6 @@
         friendly-snippets.enable = true;
         gitsigns.enable = true;
         grug-far.enable = true;
-        hmts.enable = true;
         illuminate.enable = true;
         inc-rename.enable = true;
         indent-blankline.enable = true;
